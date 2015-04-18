@@ -42,14 +42,14 @@ var appProyects = {};
 
 }();
 
-function validacion(id){
+function validarFormulario(id){
 			var elem = document.getElementById(id);
 			if(elem.checkValidity())
 					elem.style.borderColor="blue";
 			else
 					elem.style.borderColor = "red";
 }
-function enviado()
+function enviarFormulario()
 			{
 			var nombreValido=document.getElementById('nombre').checkValidity();
 			var emailValido=document.getElementById('email').checkValidity();

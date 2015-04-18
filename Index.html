@@ -82,10 +82,10 @@
 		<fieldset>
 		<legend> Contactarme </legend>
 		<section>
-			<input id="nombre" class="form-contact-item-name" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre"  required maxlength="20"/>
+			<input id="nombre" class="form-contact-item-name" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre"  oninput="validacion('nombre')" required pattern="([A-Z ]{5, 20})" maxlength="20"/>
 		</section>
 		<section>
-			<input id="email" type="email" id="email" name="email" class="form-contact-item-mail" placeholder="Ingrese su Email: example@example.com" required maxlength="25"/>
+			<input id="email" type="email" id="email" name="email" class="form-contact-item-mail" placeholder="Ingrese su Email: example@example.com" oninput="validacion('email')" required maxlength="25"/>
 		</section>
 		<section>
 			<textarea id="comentario" class="form-contact-item-message" name="comentario" placeholder="Ingrese su Comentario"></textarea>

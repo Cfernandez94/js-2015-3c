@@ -19,12 +19,16 @@ var appProyects = {};
 		    document.getElementById("portfolio").innerHTML = '<ul class="portfolio-section-proyect-list">'+proyectsPortfolio+'</ul>';
 		  }
 		},
+		
+		showProyects.open("GET", "js/Proyectos.json", true);
+		showProyects.send();
 
-		showProyects.onreadystatechange = function(){
+		var showServices =new XMLHttpRequest();
+		showServices.onreadystatechange = function(){
 			//
-		  if (showProyects.readyState === 4 &&  showProyects.status == 200){
+		  if (showServices.readyState === 4 &&  showServices.status == 200){
 		  	//Contiene el json
-		    var jsonProyects = JSON.parse(showProyects.responseText);
+		    var jsonProyects = JSON.parse(showServices.responseText);
 		    //Variable vacia que almacenara los li del json
 		    var servicesPortfolio = "";
 		    for (i = 0; i < jsonProyects.servicios.length; i++) {
@@ -33,30 +37,50 @@ var appProyects = {};
 		    document.getElementById("servi-studio").innerHTML = '<ul class="services-studio-list">'+servicesPortfolio+'</ul>';
 		  }
 		}
-		showProyects.open("GET", "js/Proyectos.json", true);
-		showProyects.send();
+		showServices.open("GET", "js/Proyectos.json", true);
+		showServices.send();
 
 }();
 
-var nombre = document.getElementById('nombre').value;
-var email = document.getElementById('email').value;
-var comentario = document.getElementById('comentario').value;
-
-function validacion() {
-	if (nombre == null || nombre.length == 0 || /^\s+$/.test(nombre)) {
-	// Si no se cumple la condicion...
-	alert('[ERROR] El campo debe de contener unicamente letras, y no estar vacío');
-	return false;
-	}if( email == null || !(/\w{1,}[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test(email)) ) {
-	alert('[ERROR] El campo debe tener @ y no contener letras Mayusculas, y no estar vacío');
-	return false;
-	} if( comentario == null || comentario.length == 0 || /^\s+$/.test(comentario) ) {
-	alert('[ERROR] El campo no debe estar vacío');
-	return false;
-	} else if(
-			alert('Ha finalizado satisfactoriamente, pronton nos comunicaremos con usted')
-		)
+function validacion(id){
+			var elem = document.getElementById(id);
+			if(elem.checkValidity())
+					elem.style.borderColor="blue";
+			else
+					elem.style.borderColor = "red";
 }
+function enviado()
+			{
+			var nombreValido=document.getElementById('nombre').checkValidity();
+			var emailValido=document.getElementById('email').checkValidity();
+			if(nombreValido && emailValido){
+				alert(nombreValido+"Su informacion fue enviada exitosamente"+"al correo"+emailValido);
+			} else{
+				alert("Por Favor revise sus campos.");
+			}		
+		}
+
+//FORM
+
+// var nombre = document.getElementById('nombre').value;
+// var email = document.getElementById('email').value;
+// var comentario = document.getElementById('comentario').value;
+
+// function validacion() {
+// 	if (nombre == null || nombre.length == 0 || /^\s+$/.test(nombre)) {
+// 	// Si no se cumple la condicion...
+// 	alert('[ERROR] El campo debe de contener unicamente letras, y no estar vacío');
+// 	return false;
+// 	}if( email == null || !(/\w{1,}[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test(email)) ) {
+// 	alert('[ERROR] El campo debe tener @ y no contener letras Mayusculas, y no estar vacío');
+// 	return false;
+// 	} if( comentario == null || comentario.length == 0 || /^\s+$/.test(comentario) ) {
+// 	alert('[ERROR] El campo no debe estar vacío');
+// 	return false;
+// 	} else if(
+// 			alert('Ha finalizado satisfactoriamente, pronto nos comunicaremos con usted')
+// 		)
+// }
 // function validacion(id){
 // 	var elem = document.getElementById(id);
 // 	if(elem.checkValidity()){

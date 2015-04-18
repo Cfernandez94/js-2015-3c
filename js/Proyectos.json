@@ -1,0 +1,42 @@
+{
+	"proyectos":[
+		{
+			"nombre":"La Iluminada",
+			"img":"img/proyect-04.png",
+			"url":"trabajos/LaIluminada/inicio.html"
+		},
+		{
+			"nombre":"El Caminito",
+			"img":"img/proyect-05.png",
+			"url":"trabajos/ElCaminito/Index.html"
+		},
+		{
+			"nombre":"Infusion",
+			"img":"img/proyect-06.png",
+			"url":"trabajos/Infusion/Infusion.html"
+		},
+		{
+			"nombre":"Fndez MMusic",
+			"img":"img/proyect-08.png",
+			"url":"trabajos/FndezMMusic/FNDEZ MMUSIC.html"
+		}
+	],
+	"servicios":[
+		{
+			"img":"img/services-01.png",
+			"infop":"Desarrollo Web con Html5"
+		},
+		{
+			"img":"img/services-02.png",
+			"infop":"Diseño Web con Ilustrator"
+		},
+		{
+			"img":"img/services-03.png",
+			"infop":"Desarrollo y Diseño Web con CSS3"
+		},
+		{
+			"img":"img/services-04.png",
+			"infop":"Desarrollo Web con JS"
+		}
+	]
+}

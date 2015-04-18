@@ -1,0 +1,74 @@
+@font-face{
+	font-family: 'ADAM';
+	src: url('../fonts/ADAM.CG PRO.otf');
+}
+
+@font-face{
+	font-family: 'ANSON';
+	src: url('../fonts/Anson-Regular.otf');
+}
+
+.contact-section{
+	background:url(../img/location.jpg);
+	background-size:cover;
+  height: 395px;
+  padding-right: 9%;
+  padding-left: 10%;
+  padding-top: 50px;
+}
+
+fieldset{
+	border:1px solid $colorBlack;
+	  height: 300px;
+}
+
+.form-contact-item-name{
+	border:1px solid #000;
+	padding-top:15px;
+	padding-bottom:15px;
+	background-color:rgba(255, 255, 255, 0.63);
+	color:#000;
+	width: 100%;
+	margin-bottom: 10px;
+	padding-left:3%;
+	font-family:'ANSON';
+}
+
+.form-contact-item-mail{
+	border:1px solid #000;
+	padding-top:15px;
+	padding-bottom:15px;
+	background-color:rgba(255, 255, 255, 0.63);
+	color:#000;
+	width: 100%;
+	margin-bottom: 15px;
+	  padding-left: 3%;
+	  font-family:'ANSON';
+}
+
+.form-contact-item-message{
+	border:1px solid #000;
+	padding-top:15px;
+	padding-bottom:15px;
+	background-color:rgba(255, 255, 255, 0.63);
+	color:#000;
+	width: 100%;
+	padding-left: 3%;
+	font-family:'ANSON';
+}
+
+.contact-send-form{
+	border: none ;
+	background-color:$colorBlueLigthr;
+height: 55px;
+width: 20%;
+margin-top: 5px;
+  padding-left: 3%;
+  font-family:'ADAM';
+    float: right;
+}
+
+.contact-send-form:hover{
+	background-color:#000;
+	color:$colorFucsia;
+}

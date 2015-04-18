@@ -1,0 +1,51 @@
+@font-face{
+	font-family: 'ADAM';
+	src: url('../fonts/ADAM.CG PRO.otf');
+}
+
+@font-face{
+	font-family: 'ANSON';
+	src: url('../fonts/Anson-Regular.otf');
+}
+
+.main-footer{
+	background-color:$colorBlack;
+	  height: 100px;
+  margin-top: -15px;  
+}
+
+.main-footer-list-one{
+	font-family: 'ADAM';
+  font-size: 1rem;
+  color: $colorBlueLigthr;
+  width: 40%;
+  padding-top: 16px;
+  padding-left: 24%;
+}
+
+.main-footer-telephone-link{
+	font-family:'ADAM';
+	font-size:1rem;
+	color:$colorBlueLigthr;
+}
+
+.main-footer-list-two{
+	  font-family: 'ADAM';
+  font-size: 1rem;
+  color: $colorBlueLigthr;
+  width: 40%;
+  margin-left: 59%;
+  margin-top: -30px;
+
+}
+
+.main-footer-email-link{
+	font-family:'ADAM';
+	font-size:1rem;
+	color:$colorBlueLigthr;
+}
+
+.copyrigth-footer{
+	color:$colorWhite;
+  text-align: center
+}

@@ -1,0 +1,43 @@
+// @font-face{
+// 	font-family: 'ANSON';
+// 	src: url('../fonts/Anson-Regular.otf');
+// }
+
+@font-face{
+	font-family: 'ADAM';
+	src: url('../fonts/ADAM.CG PRO.otf');
+}
+
+.main-header{
+	background-color:red;
+	height:760px;
+	margin-top: -22px;
+	z-index:1;
+	background: url(../img/img-6.jpg);
+	background-size:cover;
+}
+
+.main-header-more-information{
+	padding-top: 320px;
+  text-align: center;
+  color:#fff;
+}
+
+.name-main-header{
+	  font-size: 2em;
+	  font-family:'ADAM';
+	   margin-top: -10px;
+	   text-shadow: #000 3px 3px 5px;
+}
+
+.subtitle-main-header{
+	font-size:2.2em;
+	font-family:'ADAM';
+	text-shadow: #000 3px 3px 5px;
+	margin-bottom: 60px;
+}
+
+.btn-more-about-me:hover{
+	border: 3px solid $colorFucsia;
+  color: $colorBlueLigthr;
+}

@@ -1,0 +1,234 @@
+@font-face {
+	font-family:"Intro";
+	src:url("../fonts/Intro.eot?") format("eot"),
+	url("../fonts/Intro.woff") format("woff"),
+	url("../fonts/Intro.ttf") format("truetype"),
+	url("../fonts/Intro.svg#Intro") format("svg");
+	font-weight:normal;font-style:normal;
+}
+
+@font-face {
+	font-family:"Sanseriffic";
+	src:url("../fonts/Sanseriffic.eot?") format("eot"),
+	url("../fonts/Sanseriffic.woff") format("woff"),
+	url("../fonts/Sanseriffic.ttf") format("truetype"),
+	url("../fonts/Sanseriffic.svg#Sanseriffic")format("svg");
+	font-weight:normal;font-style:normal;
+}
+
+#header{
+	background-color: rgba(240, 240, 240,0.2);
+	height: 10rem;
+	position: fixed;
+	width: 100%;
+}
+
+#wrapper{
+	background-color: #000;
+}
+
+p{
+	color:#fff;
+	font-size: 1.5rem;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	font-family: 'Sanseriffic';
+}
+
+img{
+	margin-left: 5rem;
+	padding: 1rem;
+}
+
+#nav {
+	font-family: 'Intro';
+	float: right;
+	padding: 0rem;
+	font-size: 1.8rem;
+	margin-top: 4rem;
+	text-align: center;
+	margin-right: 5rem;
+}
+
+li.submenu > a{
+	background: url(../img/submenu-hover.png) no-repeat right center;
+	padding-right: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+#nav li {
+	list-style: none;
+	display: inline-block;
+	position: relative;
+	padding: 0 1.09rem 1rem;
+}
+
+#nav li ul {
+	position: absolute;
+	display: none;
+	top: 3.2rem;
+	background-color: #C9D6D7;
+	padding: 2.25rem 2rem;
+	width: auto;
+	text-align: left;
+	border-radius: 5px;
+}
+
+#nav li:hover ul {
+	display: block;
+	background-color: ;
+}
+
+li > a:hover{
+color: yellow;
+}
+
+#nav li ul li {
+	display: block;
+	padding: 0;
+	margin-bottom: 0.5rem;
+}
+
+a{
+	text-decoration: none;
+	color: #059397;
+}
+
+#video .videoHeader{
+	height: 768px;
+width: 1354px;
+margin-top: -9rem;
+}
+
+/*-------*/
+
+#content ol{
+	margin-left: 4rem;
+	font-size: 1rem;
+	margin-right: 5rem;
+}
+
+#content .music{
+	margin-top: -16rem;
+	color: #fff; 
+}
+
+.list, .elec, .house{
+	color: #fff;
+}
+
+.list {
+color: #fff;
+margin-top: -11rem;
+margin-bottom: -18rem;
+}
+
+.list h2{
+	font-family: 'Intro';
+	background: url(../img/ondas.jpg) no-repeat right;
+color: #ff616b;
+height: 19rem;
+background-color: #000;
+padding-top: 16rem;
+padding-left: 4rem;
+font-size: 2rem;
+}
+
+
+.music h2{
+	font-family: 'Intro';
+	background: url(../img/otro.jpg) no-repeat right ;
+	color: #a7a407; 
+	height: 5rem;
+background-color: #000;
+padding-top: 2rem;
+padding-left: 4rem;
+font-size: 2rem;
+margin-top: 8rem;
+
+}
+
+.elec h2{
+	font-family: 'Intro';
+		background: url(../img/fon.jpg) no-repeat right center;
+	color: #007783; 
+	height: 5rem;
+background-color: #000;
+padding-top: 2rem;
+padding-left: 4rem;
+font-size: 2rem;
+padding-right: 10rem;
+text-align: right;
+}
+
+.elec ol, p{
+	text-align: left;
+	margin-right: 8rem;
+}
+
+.house h2{
+	font-family: 'Intro';
+		background: url(../img/otro.jpg) no-repeat right ;
+	color: #f7362d; 
+	height: 5rem;
+background-color: #000;
+padding-top: 2rem;
+padding-left: 4rem;
+font-size: 2rem;
+}
+/*-------*/
+
+#footer h2{
+	font-family: 'Intro';
+color: #468ea6;
+height: 21rem;
+width: 75%;
+margin-bottom: -16rem;
+margin-left: 35rem;
+margin-top: 4rem;
+font-size: 2rem
+}
+
+.image img{
+	border: 0;
+}
+
+.image{
+	margin-left: 32rem;
+margin-bottom: -4rem;
+padding-bottom: 0rem;
+}
+
+#footer img{
+	border:0;
+	margin-left: -2rem;
+	margin-bottom: -4rem;
+}
+
+.cont address{
+	font-size: 1rem;
+text-align: center;
+margin-top: 4rem;
+margin-right: 6rem;
+color: #A62299;
+}
+
+.cont p{
+	text-align: center;
+	color: #A62299;
+}
+
+.copyright{
+	text-align: center;
+	color: #c80007;
+}
+
+#footer > div.images{
+	margin-left: 30rem;
+}
+
+#footer{
+	background: url(../img/aud.jpg) no-repeat right center;
+	margin-bottom: -4rem;
+}

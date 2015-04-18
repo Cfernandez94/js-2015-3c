@@ -1,0 +1,56 @@
+@font-face{
+	font-family: 'ANSON';
+	src: url('../fonts/Anson-Regular.otf');
+}
+
+.services-studio-kind{
+	  font-family: 'ANSON';
+  color: #000000;
+  margin-left: -99%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.studio-section{
+	display:block;
+	background-color:$colorGreen;
+	margin-top: -27px;
+	height: 530px;
+}
+
+.subtitle-services-studio{
+  font-family: 'ADAM';
+  font-size: 2em;
+  color: #FFF;
+  text-align: center;
+  border-bottom: 1px solid !important;
+  padding-top: 75px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 20px;
+}
+
+// .services-studio-icon{
+// 	display:inline;
+// 	width: 50%;
+// }
+
+.services-studio {
+  max-width: 100%;
+}
+.services-studio-list {
+    width: 168%;
+}
+.services-studio-icon {
+    display: block;
+  margin-left: -56%;
+  width: 170%;
+  height: 220px;
+  margin-right: -67%;
+}
+.services-studio-item {
+  float: left;
+  width: 4%;
+  margin: 12px 127px;
+  list-style: none;
+}
